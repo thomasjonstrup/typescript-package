@@ -1,0 +1,38 @@
+{
+  "name": "typescript-package",
+  "version": "1.0.0",
+  "description": "A TypeScript package for learning creating npm packages",
+  "main": "dist/index.js",
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "ci": "pnpm build && pnpm check-format && pnpm check-exports && pnpm test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "test": "vitest run",
+    "dev": "vitest"
+  },
+  "homepage": "https://github.com/thomasjonstrup/typescript-package",
+  "bugs": {
+    "url": "https://github.com/thomasjonstrup/typescript-package/issues"
+  },
+  "author": "Thomas Jonstrup <dev@thomasjonstrup.dk> (https://thomasjonstrup.dk)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattpocock/typescript-package.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "0.16.4",
+    "prettier": "3.3.3",
+    "typescript": "5.6.2",
+    "vitest": "2.1.1"
+  }
+}
