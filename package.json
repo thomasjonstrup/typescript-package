@@ -1,6 +1,6 @@
 {
-  "name": "typescript-package",
-  "version": "1.0.0",
+  "name": "@tjonstrup/typescript-package",
+  "version": "1.0.1",
   "description": "A TypeScript package for learning creating npm packages",
   "main": "dist/index.js",
   "keywords": [
@@ -23,7 +23,7 @@
   "author": "Thomas Jonstrup <dev@thomasjonstrup.dk> (https://thomasjonstrup.dk)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattpocock/typescript-package.git"
+    "url": "git+https://github.com/thomasjonstrup/typescript-package"
   },
   "files": [
     "dist"
@@ -31,6 +31,7 @@
   "type": "module",
   "devDependencies": {
     "@arethetypeswrong/cli": "0.16.4",
+    "@changesets/cli": "2.27.8",
     "prettier": "3.3.3",
     "typescript": "5.6.2",
     "vitest": "2.1.1"
