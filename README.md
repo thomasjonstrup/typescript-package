@@ -10,9 +10,11 @@ TypeScript package made for learning how to make npm packages with TypeScript.
 #### Example Usage
 
 ```ts
-import { add } from '@tjonstrup/typescript-package';
+import { add, divide, subtract } from '@tjonstrup/typescript-package';
 
 const result = add(1, 2);
+const resultSubtract = subtract(2, 1);
+const resultDivide = divide(2, 1);
 ```
 
 [npm-version-src]: https://img.shields.io/npm/v/@tjonstrup/typescript-package?style=flat&colorA=080f12&colorB=0E86D4
