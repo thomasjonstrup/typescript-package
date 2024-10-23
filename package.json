@@ -1,6 +1,6 @@
 {
   "name": "@tjonstrup/typescript-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript package for learning creating npm packages",
   "main": "dist/index.js",
   "keywords": [
@@ -15,8 +15,11 @@
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
     "dev": "vitest",
+    "change": "pnpm changeset",
+    "version": "pnpm changeset version",
     "coverage": "vitest run --coverage",
-    "test-ui": "vitest --ui --coverage.enabled=true"
+    "test-ui": "vitest --ui --coverage.enabled=true",
+    "publish": "npm publish --access=public"
   },
   "homepage": "https://github.com/thomasjonstrup/typescript-package",
   "bugs": {
